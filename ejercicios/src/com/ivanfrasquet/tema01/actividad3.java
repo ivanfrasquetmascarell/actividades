@@ -19,7 +19,7 @@ public class actividad3 {
     public String Path(){
         return file.getAbsolutePath();
     }
-    public String Read(){
+    public boolean Read(){
         return file.canRead();
     }
     public boolean Write(){
