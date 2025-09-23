@@ -9,14 +9,14 @@ import java.io.IOException;
 public class Actividad9 {
     private File file;
 
-    public Actividad9(File file) {
-        this.file = file;
+    public Actividad9(String directorio, String archivo) {
+        this.file = File(directorio + "/" + archivo);
     }
     public File getFile() {
         return file;
     }
-    public void setFile(File file) {
-        this.file = file;
+    public void setFile(String directorio, String archivo) {
+        this.file = File(directorio + "/" + archivo);
     }
     public boolean compararArchivo(String directorio, String archivo, String archivo2) throws IOException {
         file = new File(directorio + "/" + archivo);

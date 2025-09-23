@@ -6,14 +6,14 @@ import java.io.*;
 public class Actividad11 {
     private File file;
 
-    public Actividad11(File file) {
-        this.file = file;
+    public Actividad11(String directorio, String archivo) {
+        this.file = File(directorio + "/" + archivo);
     }
     public File getFile() {
         return file;
     }
-    public void setFile(File file) {
-        this.file = file;
+    public void setFile(String directorio, String archivo) {
+        this.file = File(directorio + "/" + archivo);
     }
     public void concatlines(String directorio, String archivo, String archivo2, String archivo3) throws IOException {
         file = new File(directorio + "/" + archivo);

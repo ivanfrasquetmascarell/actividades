@@ -5,16 +5,16 @@ import java.io.*;
 public class GestionArchivos {
     private File file;
 
-    public GestionArchivos(File file) {
-        this.file = file;
+    public GestionArchivos(String directorio, String archivo) {
+        this.file = File(directorio + "/" + archivo);
     }
 
     public File getFile() {
         return file;
     }
 
-    public void setFile(File file) {
-        this.file = file;
+    public void setFile(String directorio, String archivo) {
+        this.file = File(directorio + "/" + archivo);
     }
 
     public boolean creararchivo(String directorio, String archivo) {

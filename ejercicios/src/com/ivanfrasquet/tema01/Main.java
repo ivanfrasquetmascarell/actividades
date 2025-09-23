@@ -6,15 +6,17 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         File file = new File("tema01");
+        String directorio = "tema01";
+        String archivo = "";
 
-        Actividad1 a1 = new Actividad1(file);
+        Actividad1 a1 = new Actividad1(directorio, archivo);
         System.out.println();
         System.out.println("actividad 1");
         System.out.println();
         System.out.println(a1.existe());
         System.out.println(a1.directorio());
 
-        actividad2 a2 = new actividad2(file);
+        actividad2 a2 = new actividad2(directorio, archivo);
         System.out.println();
         System.out.println("actividad 2");
         System.out.println();
@@ -22,7 +24,7 @@ public class Main {
             System.out.println(a2.mostrar()[i]);
         }
 
-        actividad3 a3 = new actividad3(file);
+        actividad3 a3 = new actividad3(directorio, archivo);
         System.out.println();
         System.out.println("actividad 3");
         System.out.println();
@@ -31,7 +33,7 @@ public class Main {
         System.out.println(a3.Read());
         System.out.println(a3.Write());
 
-        actividad4 a4 = new actividad4(file);
+        actividad4 a4 = new actividad4(directorio, archivo);
 
         System.out.println();
         System.out.println("actividad 4");
@@ -46,7 +48,7 @@ public class Main {
         System.out.println(a4.LastModified());
         System.out.println(a4.size());
 
-        GestionArchivos a5 = new GestionArchivos(file);
+        GestionArchivos a5 = new GestionArchivos(directorio, archivo);
 
         System.out.println();
         System.out.println("actividad 5");
@@ -76,7 +78,7 @@ public class Main {
         archivo = br.readLine();
         a5.leerhexadecimal(directorio, archivo);
 
-        actividad8 a8 = new actividad8(file);
+        actividad8 a8 = new actividad8(directorio, archivo);
 
         System.out.println();
         System.out.println("actividad 8");
@@ -87,7 +89,7 @@ public class Main {
         archivo = br.readLine();
         a8.leerArchivo(args[0], args[1]);
 
-        Actividad9 a9 = new Actividad9(file);
+        Actividad9 a9 = new Actividad9(directorio, archivo);
 
         System.out.println();
         System.out.println("actividad 9");
@@ -102,7 +104,7 @@ public class Main {
 
         System.out.println(a9.compararArchivo(directorio, archivo, archivo2));
 
-        Actividad10 a10 = new Actividad10(file);
+        Actividad10 a10 = new Actividad10(directorio, archivo);
 
         System.out.println();
         System.out.println("actividad 10");
@@ -119,7 +121,7 @@ public class Main {
 
         a10.concat(directorio, archivo, archivo2, archivo3);
 
-        Actividad11 a11 = new Actividad11(file);
+        Actividad11 a11 = new Actividad11(directorio, archivo);
 
         System.out.println();
         System.out.println("actividad 11");
